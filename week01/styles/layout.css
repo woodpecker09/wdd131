@@ -53,6 +53,7 @@ main{
 
 aside{
     background-color: #ffffff;
+    min-height: 20rem;
 }
 
 footer{
