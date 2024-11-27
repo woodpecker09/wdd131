@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+header{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 0;
+    place-items: center;
+    padding: 10px;
+    background-color: #003057;
+   
+}
+
+h1 {
+    align-self: center;
+    justify-self: start;
+    color: #fff;
+}
+
+nav a{
+    display: none;
+    padding: 10px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 700;
+    max-width: fit-content;
+    color: #fff;
+    transition: 0.5s;
+}
+nav a:hover{
+    background-color: #fff;
+    color: #003057;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+nav a:active{
+    font-size: 1rem;
+}
+
+#menu{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    justify-self: end;
+    align-self: start;
+	font-size: 1.5rem;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+    border-style: none;   
+}
+
+#menu::before {
+    content: "☰";
+    transition: 0.5s;
+}
+
+#menu.open-menu::before {
+	content: "x";  
+    font-size: 2.5rem;
+}
+.h1-open{
+    display: none;
+}
+.open{
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+	justify-content: space-around;
+	list-style: none;
+}
+
+.open a{
+    display: block;
+}
+
+main { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+
+h2{
+    grid-column: 1 / -1;
+    text-align: center;    
+}
+img{
+    grid-column: auto;
+    max-width: 100%;
+   
+}
+
+figcaption{
+    text-align: center;
+}
+
+footer {
+    background-color: #003057;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}

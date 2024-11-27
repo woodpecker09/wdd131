@@ -1,0 +1,21 @@
+@media screen and (min-width:550px){
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    h1{
+        display: inline;
+    }
+    #menu {
+		display: none;
+	}
+    nav{
+        justify-self: end;
+        align-self: center;
+        display: flex;
+    }
+    nav a{
+        display: block;
+    }
+}
