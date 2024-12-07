@@ -1,0 +1,131 @@
+:root{
+    --font-family: Roboto, arial;
+    --text-color: #ffffff;
+    --background-color: #003057;
+    --hov-text-color: #003057;
+    --hov-back-color: #ffffff;
+    --section-back:#eeeeee;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+header{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 0;
+    place-items: center;
+    padding: 10px;
+    background-color: var(--background-color);
+}
+
+h1 {
+    align-self: center;
+    justify-self: start;
+    color: var(--text-color);
+}
+
+nav a{
+    display: none;
+    padding: 10px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 700;
+    max-width: fit-content;
+    color: var(--text-color);
+    transition: 0.5s;
+}
+nav a:hover{
+    background-color: var(--hov-back-color);
+    color: var(--hov-text-color);
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+nav a:active{
+    font-size: 1rem;
+}
+
+#menu{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    justify-self: end;
+    align-self: start;
+	font-size: 1.5rem;
+	font-weight: bold;
+	background-color: transparent;
+	color: var(--text-color);
+    border-style: none;   
+}
+
+#menu::before {
+    content: "☰";
+    transition: 0.5s;
+}
+
+#menu.open-menu::before {
+	content: "x";  
+    font-size: 2.5rem;
+}
+.h1-open{
+    display: none;
+}
+.open{
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+	justify-content: space-around;
+	list-style: none;
+}
+
+.open a{
+    display: block;
+}
+
+
+h2{
+    padding: 1rem;
+    grid-column: 1 / -1;
+    text-align: center;    
+}
+h3{
+    padding: 0.5rem;
+    text-align: center;
+}
+
+
+.a-div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-items: center;
+}
+
+section{
+    background-color: var(--section-back);
+    display: grid;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.lable{ 
+    color: var(--background-color);
+    font-weight: 700;
+}
+.a-div img{
+    border-radius: 1rem;
+    max-width: 100%;
+}
+
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+}
