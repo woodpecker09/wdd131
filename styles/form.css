@@ -1,0 +1,112 @@
+:root {
+    --page-font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    --background-color: #90B8D8;
+    --starts-base-color:rgb(221, 221, 221);
+    --starts-select:rgb(250, 242, 144);
+    --footer-text-color:rgb(255, 255, 255);
+  }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: var(--page-font-family);
+  }
+
+
+h1 {
+    justify-self: center;
+}
+
+
+form{
+    margin: 1rem auto;
+    width: fit-content;
+    display: grid;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--background-color);
+}
+
+
+
+select, div, input[type='date'], textarea, input[type='text']{
+    margin-bottom: 1.5rem;
+}
+
+input:not([type='checkbox']), select{
+    min-height: 44px;
+}
+
+label{
+    display: block;
+    padding: 0.3rem 0;
+}
+
+input[type='checkbox'] {
+    margin-right: 5px;
+}
+
+input[type='submit']{
+    font-weight: 700;
+    font-size: larger;
+}
+
+
+/* stars---------------- */
+
+.star-rating {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating > label {
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    transition: 0.2s ease;
+    color: var(--starts-base-color);
+}
+
+.star-rating label:hover {
+    color: var(--starts-select);
+    transition: 0.2s ease;
+
+    text-shadow: 2px 2px 5px rgba(250, 242, 144, 0.5);
+}
+
+.star-rating label:active::before {
+    transform:scale(1.1);
+}
+  
+
+.star-rating label::before {
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+}
+
+.star-rating input:checked ~ label:before {
+    content:'\2605';
+    color: var(--starts-select);
+}  
+/* ---------- */
+
+footer {
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 20px;
+    width: fit-content;
+    justify-self: center;
+    border-radius: 1rem;
+}
