@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Basic Web Page Planning: this website helps beginners to learn and practice basic HTML CSS and JS">
+        <meta name="author" content="Harold B. Ortega Villavicencio">
+    <title>Basic WC Learning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/colortheme.css">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/interactive-face.css">
+    <link rel="stylesheet" href="styles/int-face-large.css">
+    <link rel="stylesheet" href="styles/answer.css">
+    <link rel="stylesheet" href="styles/instructions.css">
+
+    <link rel="stylesheet" href="styles/switch.css">
+    <script src="scripts/intfacecss.js" defer></script>
+    <script src="scripts/theme.js" defer></script>
+</head>
+    <body>
+        <header>
+        
+            <h1>Basic WC Learning</h1>
+
+            <div>
+                <input type="checkbox" id="theme">
+                <label for="theme" class="toggleSwitch">
+                        <img src="images/moon.svg" alt="moon icon">
+                        <img src="images/sun.svg" alt="sun icon">
+                </label>
+            </div>
+            <div>
+                
+            </div>
+         
+            <nav>
+                    <a href="index.html">Home</a>
+                    <a href="htmlinstructions.html">HTML</a>
+                    <a href="">CSS</a>
+            </nav>
+           
+            
+        </header> 
+        <main>
+            <div class="info">
+
+            
+                
+                <h2>Basic HTML</h2>
+
+                <p>
+                    In CSS, <code>color: #fff;</code> is used to set the text color to white. The <code>#fff</code> is a shorthand hexadecimal color code, where <code>#fff</code> is equivalent to <code>#ffffff</code>. Hexadecimal color codes are often used in web design because they provide a concise way to specify colors. Each pair of characters represents the intensity of red, green, and blue (RGB), respectively. Using <code>#fff</code> is efficient and widely supported across browsers. This method allows for precise control over text and background colors, enhancing readability and aesthetic appeal in web design. Applying <code>color: #fff;</code> in your CSS ensures that the text appears in white, which can be useful for contrasting against darker backgrounds.
+                </p>
+                <h2>instructions</h2>
+                <p>give color #fff to the hiden text</p>
+                                
+               
+
+            </div>
+
+            <details>
+                <summary id="answer">Answer</summary>
+                <p>color: #fff;</p>
+            </details>
+              
+
+            <div class="practice">
+               <label for="codeP">code</label>
+                <textarea name="writteR" id="codeP" rows="1" cols="1" placeholder="type here"></textarea>
+               <button id="checkCode">Check Code</button>
+
+               <iframe src="showpage.html" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
+            </div>
+
+
+
+        </main>
+        <footer> 
+            <p>&copy;<span id="currentyear"></span> 👾 Harold B. Ortega Villavicencio 👾 Ecuador</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>

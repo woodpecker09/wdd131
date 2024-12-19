@@ -1,0 +1,9 @@
+:root{
+    --whole-back-col: rgb(255, 255, 255);
+    --backgound-color: rgb(184, 216, 243);
+    --color: #000000;
+    --font-family: 'Roboto', arial;
+    --answer-bk-cl: rgb(214, 255, 214);
+    --good-answer-bck:rgb(95, 218, 95);
+    --wrong-answer-bck:rgb(218, 99, 95);
+}

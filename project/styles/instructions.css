@@ -1,0 +1,9 @@
+.example{
+    background-color: var(--color);
+    color: var( --whole-back-col);
+    border-radius: 5px;
+    padding: 2px;
+}
+p{
+    line-height: 2;
+}
